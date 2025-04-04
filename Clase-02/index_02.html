@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Gestion de lista de compras</title>
+</head>
+<body>
+    <h1>GESTIÓN DE LISTA DE COMPRAS</h1>
+        <div class="containerTitulos">
+            <h2>
+                Agregar un producto a tu lista de compras: 
+            </h2>
+                <h2 class="tituloLista">
+                    Lista de compras
+                </h2>
+        </div>
+            <main>
+            
+                <form id="formulario" action="">
+                    <input type="text" id="producto" placeholder="Nombre del producto" required>
+                    <input type="number" id="cantidad" placeholder="Cantidad" required>
+                    <button type="submit" id="Agregar">Agregar</button>
+                </form>
+                <div class="div_compras">
+                    <ul id="contenedorDeCompras">
+                
+                    </ul>
+                </div>
+                
+            </main>
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
