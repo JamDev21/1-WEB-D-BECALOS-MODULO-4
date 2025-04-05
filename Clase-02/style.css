@@ -45,13 +45,13 @@ main{
 h2{
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: var(--color3);
+    color: var(--color2);
 }
 
 .tituloLista{
     position: relative;
     right: 15%;
-    color: violet;
+    color: var(--color2);
 }
 
 #formulario{
@@ -69,4 +69,14 @@ h2{
     padding: 10px;
     align-items: center;
     color: var(--color1);
+}
+
+.btn-Eliminar{
+    background-color: #09c184;
+    border: none;
+    margin-left: 1rem;
+}
+
+.btn-Eliminar:hover{
+    background-color: #0a8967;
 }
