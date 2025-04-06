@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(247,236,2);
+    background: linear-gradient(13deg, rgba(247,236,2,1) 11%, rgba(255,238,122,1) 91%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    margin: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
