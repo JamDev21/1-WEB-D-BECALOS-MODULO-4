@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon-16x16.png" type="image/x-icon">
+    <script type="module" src="./index.js"></script>
+    <title>DOMINOS</title>
+</head>
+<body>
+
+   <header class="nav-var">
+    <div class="div-nav-var">
+            <img class="img-logo" src="./assets/img/Domino's_pizza_logo.svg.png" alt="">
+                <p>ORDENA ONLINE</p>
+                    <p>MENÚ</p>
+                        <p>PROMOS</p>
+                            <p>UBICACIÓN</p>
+                                <p>TRACKER</p>
+                        <div class="sesion">
+                            <img class="img-user" src="./assets/img/img-usr.png" alt="">
+                            <p>INICIA SESIÓN</p>
+                        </div>
+
+                        <div class="_carrito">
+                        <img class="img-carrito" src="./assets/img/img-carrito.png" alt="">
+                        <p>
+                            CARRITO
+                        </p>
+                        </div>
+    </div>
+   </header>
+
+    <main>
+        <div class="div-search">
+            <input autocomplete="off" id="input-search" type="text" placeholder="Busca la pizza de tu preferencia: ">
+        </div>
+        <div id="autocomplete-list"></div>
+        <div class="sugerencia-inteligente">
+            <button class="btn-sugerencia-inteligente" id="suggestion-btn">
+                <p>Sugerencia inteligente</p>
+                <img class="icon-sugerencia" src="./assets/img/icon-sugerencia.png" alt="">
+            </button>
+        </div>
+        <div class="div-ordenar">
+            <label for="sort"> Ordenar por:</label>
+            <select name="" id="sort">
+                <option value="" disabled selected>Seleciona un criterio</option>
+                <option value="precio">Precio</option>
+                <option value="nombre">Nombre</option>
+                <option value="categotia">Categoria</option>
+                <option value="noIngredientes">#Ingrestientes</option>
+                <option value="tiempo">Tiempo</option>
+            </select>
+        </div>
+
+        <div class="div-tarjetas">
+            <section id="categories">
+                <!-- DFS/BFS tree de categorias de pizzas -->
+            </section>
+            <section class="section-tarjetasPizza" id="datosPizzas">
+                <!-- Tajetas de pizzas  -->
+            </section>
+        </div>
+
+        <div class="parent">
+            <div class="div1"><img src="https://cache.dominos.com/wam/prod/market/MX/_es/images/promo/2f9b97d4-fcce-4dec-91bb-8fdd417749ff.png" alt=""> </div>
+            <div class="div2"><img src="https://cache.dominos.com/wam/prod/market/MX/_es/images/promo/a54d1efa-8dfd-420f-9b59-80b04ccd8533.png" alt=""> </div>
+            <div class="div3"><img src="https://cache.dominos.com/wam/prod/market/MX/_es/images/promo/49539ead-9191-4908-a63a-baeb736db01b.png" alt=""> </div>
+            <div class="div4"> <img src="https://cache.dominos.com/wam/prod/market/MX/_es/images/promo/04b636c4-b0bb-4ebb-801f-d2483fd41b94.png" alt=""></div>
+        </div>
+
+    </main>
+
+    <aside class="aside-main">
+        <div >
+            <h2>Análisis</h2>
+        </div>
+        <p id="analysis">No buscaste ninguna piezza esta semana.</p>
+        <div>
+            <h3>Sugerencias recientes</h3>
+        </div>
+        <ul id="recent-suggestions">
+            <!-- Sliding window -->
+        </ul>
+    </aside>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
